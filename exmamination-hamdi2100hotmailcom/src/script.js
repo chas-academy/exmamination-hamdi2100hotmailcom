@@ -1,14 +1,13 @@
 let income=[]
 let expense=[]
 
-const desc = document.getElementById( 'desc');
-const amount = document.getElementById( 'amount');
-const incomeBtn = document.getElementById( 'incomeBtn');
-const  expenseBtn = document.getElementById( 'expenseBtn');
-
-const incomeList = document.getElementById( ' incomeList');
-const expenseList = document.getElementById( 'expenseList');
-const transactionList = document.getElementById( 'transactionList');
+const desc = document.getElementById('desc');
+const amount = document.getElementById('amount');
+const incomeBtn = document.getElementById('incomeBtn');
+const  expenseBtn = document.getElementById('expenseBtn');
+const incomeList = document.getElementById(' incomeList');
+const expenseList = document.getElementById('expenseList');
+const transactionList = document.getElementById('transactionList');
 
 function updateBalance(){
     const totalIncome =income.reduce((sum,trans)=>sum+ trans.amount,0);
